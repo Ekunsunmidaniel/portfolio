@@ -6,7 +6,6 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 /**************************/
@@ -17,7 +16,6 @@ body {
   font-family: "Rubik", sans-serif;
   color: #333;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 /**************************/

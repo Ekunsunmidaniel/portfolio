@@ -3,6 +3,9 @@ const links = document.querySelectorAll("a");
 const header = document.querySelector(".header");
 const sectionHero = document.querySelector("#section-hero");
 const btnNav = document.querySelector(".btn-mobile-nav");
+const form = document.querySelector('.contact-form');
+const formInput = form.querySelectorAll('.input');
+const formMessage = form.querySelector('.message');
 
 // Set current year
 const currentYear = new Date().getFullYear();
@@ -38,4 +41,14 @@ links.forEach((link) => {
       header.classList.toggle("nav-open");
     }
   });
+});
+
+// Form
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    formInput.forEach(input => {
+        input.value = "";
+    });
+    formMessage.value = '';
 });

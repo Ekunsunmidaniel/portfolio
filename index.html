@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/queries.css">
+        <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script defer src="./js/script.js"></script>
+        <title>Joshua Akhidenor's Portfolio</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#section-about">About Me</a></li>
+                    <li><a class="nav-link" href="#section-projects">Projects</a></li>
+                    <li><a class="nav-link" href="#section-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn-mobile-nav">
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </button>
+        </header>
+        <section id="section-hero">
+            <div class="hero container">
+                <div class="profile-photo-box">
+                    <img src="./images/jj.jpeg" alt="Profile Photo" class="profile-photo">
+                </div>
+                <div class="profile">
+                    <h1 class="heading-primary profile-name">Joshua Akhidenor</h1>
+                    <div class="occupation">
+                        <p>Software Engineer</p>
+                    </div>
+                    <div class="socia-media">
+                        <ul class="social-media-list">
+                            <li><a class="socia-media-link" href="https://github.com/joshua-jj" rel="noopener" target="_blank"><ion-icon class="social-icon" name="logo-github"></ion-icon></a></li>
+                            <li><a class="socia-media-link" href="https://www.linkedin.com/in/joshuajj/" rel="noopener" target="_blank"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a></li>
+                            <li><a class="socia-media-link" href="https://twitter.com/_joshua_jj" rel="noopener" target="_blank"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
+                            <li><a class="socia-media-link" href="https://www.instagram.com/_joshuajj_/" rel="noopener" target="_blank"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-about">
+            <div class="container">
+                <h2 class="heading-secondary">About Me</h2>
+                <p class="about-description">Hi, I am Joshua Akhidenor. My friends call me JJ. I enjoy building software applications. I am committed to learning new things to make me better at what I do. I am a shy young man but people hardly notice because I'm so good at hiding it 😜.</p>
+                <p class="about-description">Aside coding, I enjoy watching football listening to music and watching YouTube videos.</p>
+            </div>
+        </section>
+        <section id="section-projects">
+            <div class="container">
+                <h2 class="heading-secondary">Projects</h2>
+                <div class="project-container">
+                    <div class="project">
+                        <img src="./images/omnifood.png" alt="Omnifood Image">
+                        <a class="project-title" href="https://omnifood-jj.netlify.app/" rel="noopener" target="_blank">Omnifood</a>
+                    </div>
+                    <div class="project">
+                        <img src="./images/bankist.png" alt="Bankist Image">
+                        <a class="project-title" href="https://joshua-jj.github.io/bankist/" rel="noopener" target="_blank">Bankist</a>
+                    </div>
+                    <div class="project">
+                        <img src="./images/mapty.png" alt="Mapty Image">
+                        <a class="project-title" href="https://joshua-jj.github.io/mapty/" rel="noopener" target="_blank">Mapty</a>
+                    </div>
+                    <div class="project">
+                        <img src="./images/pig-game.png" alt="Pig Game Image">
+                        <a class="project-title" href="https://joshua-jj.github.io/pig-game/" rel="noopener" target="_blank">Pig Game</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-contact">
+            <div class="container">
+                <h2 class="heading-secondary">Get In Touch</h2>
+                <p class="contact-description">Want to get in touch? Feel free to reach me!</p>
+                <form class="contact-form" action="#" novalidate>
+                    <div class="input-container">
+                        <label for="name">Name</label>
+                        <input class="input" id="name" type="text">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input class="input" id="email" type="email">
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Message</label>
+                        <textarea class="message" id="message"></textarea>
+                    </div>
+                    <button class="btn-send">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <p>Copyright &copy; <span class="year"></span> by Joshua Akhidenor.</p>
+            </div>
+        </footer>
+    </body>
+</html>

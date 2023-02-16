@@ -175,8 +175,8 @@ body {
 
 #section-hero {
   background-color: #fdf2e9;
-  height: 85vh;
 }
+
 
 .profile-name {
   animation: slideInLeft 0.8s ease-out;
@@ -203,6 +203,10 @@ body {
   list-style: none;
   display: flex;
   gap: 2.6rem;
+}
+
+.social-media-link {
+    display: inline-block;
 }
 
 

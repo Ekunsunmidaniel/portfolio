@@ -47,20 +47,7 @@
     }
   }
 
-  /* @keyframes slideNavRight {
-    0% {
-      opacity: 1;
-      transform: translateX(-20rem);
-    }
-
-    100% {
-      opacity: 0;
-      transform: translateX(0);
-    }
-  } */
-
   html {
-    /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
   }
 
@@ -89,7 +76,6 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    /* transform: translateX(100%); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +91,6 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    /* transform: translateX(0); */
     animation: slideNavLeft 0.3s ease-out;
   }
 

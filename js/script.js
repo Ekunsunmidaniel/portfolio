@@ -1,14 +1,13 @@
-// Set Date
 const year = document.querySelector(".year");
+const links = document.querySelectorAll("a");
+const header = document.querySelector(".header");
+const sectionHero = document.querySelector("#section-hero");
+const btnNav = document.querySelector(".btn-mobile-nav");
+
+// Set current year
 const currentYear = new Date().getFullYear();
 year.innerHTML = currentYear;
 
-const links = document.querySelectorAll("a");
-const header = document.querySelector(".header");
-const sectionHero = document.querySelector('#section-hero')
-
-
-const btnNav = document.querySelector(".btn-mobile-nav");
 
 btnNav.addEventListener('click', function() {
     header.classList.toggle('nav-open');
@@ -35,11 +34,9 @@ links.forEach((link) => {
       section.scrollIntoView({ behavior: "smooth" });
     }
 
-    // // Close mobile navigation
+    // Close mobile navigation
     if (link.classList.contains("nav-link")) {
       header.classList.toggle("nav-open");
-    //   sectionHero.classList.toggle("no-opacity");
-      console.log('nav closed');
     }
   });
 });

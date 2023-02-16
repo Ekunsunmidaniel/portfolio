@@ -47,17 +47,17 @@
     }
   }
 
-  @keyframes slideNavRight {
+  /* @keyframes slideNavRight {
     0% {
-      opacity: 0;
-      transform: translateX(20rem);
+      opacity: 1;
+      transform: translateX(-20rem);
     }
 
     100% {
-      opacity: 1;
-      transform: translate(0);
+      opacity: 0;
+      transform: translateX(0);
     }
-  }
+  } */
 
   html {
     /* 8px / 16px = 0.5 = 50% */
@@ -93,8 +93,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transition: all 0.5s ease-in; */
+    transition: all 0.5s ease-in;
     opacity: 0;
+    animation: slideNavRight 0.3s ease-out;
     pointer-events: none;
     visibility: hidden;
     z-index: 10;
@@ -124,6 +125,7 @@
   .nav-link:link,
   .nav-link:visited {
     font-size: 3rem;
+    color: #8a4c14;
   }
 }
 

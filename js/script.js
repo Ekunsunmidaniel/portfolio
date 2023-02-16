@@ -18,8 +18,6 @@ btnNav.addEventListener('click', function() {
 
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
-    console.log(link);
-    e.preventDefault();
     const href = link.getAttribute("href");
 
     // Scroll back to top

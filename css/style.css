@@ -45,6 +45,10 @@ body {
   text-align: center;
 }
 
+.no-opacity {
+    opacity: 0;
+}
+
 /**************************/
 /*? HEADER */
 /**************************/

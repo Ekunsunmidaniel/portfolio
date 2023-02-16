@@ -8,7 +8,7 @@ const btnNav = document.querySelector(".btn-mobile-nav");
 const currentYear = new Date().getFullYear();
 year.innerHTML = currentYear;
 
-
+// Mobile Navigation buttons
 btnNav.addEventListener('click', function() {
     header.classList.toggle('nav-open');
     // sectionHero.classList.toggle('no-opacity');
@@ -40,4 +40,3 @@ links.forEach((link) => {
     }
   });
 });
-

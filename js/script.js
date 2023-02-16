@@ -43,7 +43,6 @@ links.forEach((link) => {
 
 
 // Form
-
 form.addEventListener('submit', e => {
     e.preventDefault();
     formInput.forEach(input => {
